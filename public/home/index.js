@@ -26,28 +26,6 @@ app.controller('ProductCtrl', ['$scope', '$window', 'Backend', function($scope, 
   for(var i = 0; i < $scope.practices.length; i++) {
     $scope.messages.push($scope.practices[i].message);
   }
-
-  // angular.extend($scope, {
-  //   defaults: {
-  //       tileLayer: 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
-  //       maxZoom: 14,
-  //       path: {
-  //           weight: 10,
-  //           color: '#800000',
-  //           opacity: 1
-  //       }
-  //   },
-  //   center: {
-  //       lat: 51.505,
-  //       lng: -0.09,
-  //       zoom: 8
-  //   }
-  // });
-
-  // leafletData.getMap().then(function(map) {
-  //   L.GeoIP.centerMapOnPosition(map, 15);
-  // });
-
 }]);
 
 
